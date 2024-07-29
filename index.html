@@ -8,12 +8,30 @@
 </head>
 <body>
     <script>
+        "use strict"
         console.log('Hello world')
         let user = {name: 'Muhammad'}
         console.log( {     // an object
-  name: "John",  // by key "name" store value "John"
-  age: 30        // by key "age" store value 30
-}.age)
+        name: "John",  // by key "name" store value "John"
+        age: 30        // by key "age" store value 30
+        }.age)
+
+        let user1 = {
+            firstName: "Ilya",
+            sayHi() {
+                console.log(this);
+                // let arrow = () => console.log(this.firstName);
+                let arrow = function(){console.log(this.firstName);}
+                arrow();
+            }
+        };
+
+        user1.sayHi();
+
+        let user2 = {
+            name: 'Muhammad Abdussalam',
+            age: 30
+        }
     </script>
 </body>
 </html>
