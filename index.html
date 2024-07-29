@@ -20,8 +20,8 @@
             firstName: "Ilya",
             sayHi() {
                 console.log(this);
-                // let arrow = () => console.log(this.firstName);
-                let arrow = function(){console.log(this.firstName);}
+                let arrow = () => console.log(this.firstName);
+                //let arrow = function(){console.log(this.firstName);}
                 arrow();
             }
         };
@@ -32,6 +32,8 @@
             name: 'Muhammad Abdussalam',
             age: 30
         }
+        let id = Symbol()
+        console.log(id);
     </script>
 </body>
 </html>
